@@ -1,0 +1,11 @@
+<img src="kamil_konowalik1.jpg" width="40%" align=”left” style=”float:left; margin: 10px 10px 10px 10px;white-space=wrap” />
+
+
+
+            <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About me</h2>
+<p class="lead"><img class="img-fluid rounded mb-3 mb-md-0" src="kamil_konowalik1.jpg" alt="Me, and the highest population of L. rotundifolium consisting of three plants...">I'm Kamil and I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University of Environmental and Life Sciences</a> in <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank">Wroc³aw</a>. Currently, I'm working on the project <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a> where I'm studying <a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">Carpathian</a> endemic <a href="https://www.gbif.org/species/5400956" target="_blank"><i>Leucanthemum rotundifolium</i></a> and associated taxa using molecular markers and cytogenetics. I have worked on phylogenetics, population genetics, cytogenetics, plant morphology, species distribution modeling (SDM), and GIS. <br>In my research, I focus mainly on the <a href="https://en.wikipedia.org/wiki/Asteraceae" target="_blank">Asteraceae</a> family, the biggest family of land plants with about 25000 species with an enormous variability. I like combining geographical and biological data thus main activities are centered on biogeography. Moreover, since my childhood, I like experiments so whenever I have a possibility I try to perform some experimental works. Privately I like gardening and traveling.</p>
+
