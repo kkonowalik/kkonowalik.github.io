@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <meta name="Kamil Konowalik" content="">
+  <meta name="google-site-verification" content="vpb4Qw1ALrPvJsWINOFyVq3ICLiIARRJc9Nr3pBMhQo" />
+  <title>Kamil Konowalik - website</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,24 @@
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Leaflet map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
 </head>
 
 <body id="page-top">
@@ -23,20 +41,32 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Kamil Konowalik</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#Species">Species and excursions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Teaching">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#CV">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -45,45 +75,322 @@
 
   <header class="bg-primary text-white">
     <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <h1> <img src="in_the_Carpathians.jpg" width="100%"> </h1>
+      <p class="lead">Hi! I'm Kamil Konowalik - a botanist and evolutionary biologist working at <a href="https://www.upwr.edu.pl/en/" target="_blank" style="color:silver">WUELS</a>.</p>
     </div>
   </header>
 
+
+
+
   <section id="about">
+    <div class="container">
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="kamil_konowalik1.jpg" alt="Me and one of the highest populations of L. rotundifolium found by Bogumił Pawłowski onthe slopes of Ciemniak in High Tatra Mts. (Western Carpathians)">
+        </div>
+        <div class="col-md-6">
+          <h3>About me</h3>
+          <p class="lead">I'm Kamil and I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University of Environmental and Life Sciences</a> in <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank">Wrocław</a>. Currently, I'm working on the project <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a> where I'm studying <a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">Carpathian</a> endemic <a href="https://www.gbif.org/species/5400956" target="_blank"><i>Leucanthemum rotundifolium</i></a> and associated taxa using molecular markers and cytogenetics. I have worked on phylogenetics, population genetics, cytogenetics, plant morphology, species distribution modeling (SDM), and GIS. I'm interested in the evolution of plants and especially in their speciation. Thus I'm studying hybridization and polyploidy which are the most prominent forces linked to those processes in plants.<br>In my research, I focus mainly on the <a href="https://en.wikipedia.org/wiki/Asteraceae" target="_blank">Asteraceae</a> family, the biggest family of land plants with about 25000 species with an enormous variability. I like combining geographical and biological data thus main activities are centered on biogeography. Moreover, since my childhood, I like experiments so whenever I have a possibility I try to perform some experimental works. Privately I like gardening and traveling.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+<!--
+I'm interested in that because when we look around us we are surrounded by an enourmous species diveristy. If the spatial extent is increased this diveristy is even inreased. Thus I'm studying the world around us. How evolution works and what are the outcomes of it? What are the effects of speciation proceses and how it works? Interested in the phylogeography and speciation. I also like GIS and combining geographic and biological data. And
+-->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Projects" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <h2>Projects</h2>
+          <p class="lead">Presently, I'm realizing the project <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a>. The projects in which I participated are listed here:</p>
           <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            <li>Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae) - <b>principal investigator</b>, 2017-ongoing, funding 561230 PLN (125000 EUR) from NCN (National Science Centre, Poland)</li>
+            <li>Phylogeny of three sections within genus <i>Centaurea</i> (Compositae) - <b>principal investigator</b>, 2019, funding 4318.43 PLN (946 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
+            <li>Phylogeny and biogeography of genus <i>Chrysanthellum</i> Rich. (Coreopsideae, Asteraceae) - <b>principal investigator</b>, 2018-2019, funding 10232 PLN (2245 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
+            <li>Analysis of variability of selected chloroplast markers in phylogeographic studies of <i>Pleurospermum austriacum</i> (Apiaceae) - <b>principal investigator</b>, 2017-2018, funding 9999.60 PLN (2200 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
+            <li><a href="https://gepris.dfg.de/gepris/projekt/132607997?context=projekt&task=showDetail&id=132607997&" target="_blank">Consequences of polyploidy: Phylogeny, phyloecology, and expression of duplicated genes in <i>Leucanthemum</i> Mill. (Compositae, Anthemideae) </a> - <b>grant executor</b> (PhD position), 2009-2014, funding obtained by <a href="https://www.uni-regensburg.de/biologie-vorklinische-medizin/evolution-systematik-pflanzen/index.html" target="_blank">Prof. Christoph Oberprieler</a> and <a href="https://www.bgbm.org/en/staff/dr-robert-vogt" target="_blank">Dr. Robert Vogt</a> from DFG (German Research Foundation, Germany).</li></p></ul>
+ <p class="lead">Research stays	:</p>
+          <ul>            
+<li>Research stay at the University of Veracruz (Mexico) funded by Erasmus-Mundus MAYA-NET (Mobility As keY factor for quAlity eNhancement of EU and LA univErsiTies”), 2016, 2850 EUR.</li>
+            <li>Cytogenetic characterisation of <i>Artemisia absinthium</i> (FISH) - 2008, short research stay at University of Paris-Sud (Orsay, France) during LLP-Erasmus project.</li>
+            <li>Cytogenetic characterisation of <i>Artemisia absinthium</i> - 2008-2009, research project funded by LLP-Erasmus, University of Barcelona (Spain).</li>
+          </ul>
+          <p class="lead">Other funding that I received:</p>
+          <ul>
+            <li>Internal grant from Vice-Rector for Research and International Relations (WUELS) for funding of the purchase of research equipment. Flow cytometer, funding 100950 PLN (22131 EUR)</li>
+
+            <li>Travel award for Phylogenomics Symposium and Software School at Austin (USA), 2016, 1000 USD.</li>
+            <li>Travel award to attend the Evolution Meeting, 2016, 6380 PLN (1400 EUR) supported by the Leading National Research Centre (KNOW) programme of the Wrocław Center of Biotechnology for years 2014–2018.</li>
+            <li>Funding to purchase desktop computer, 2016, 3499 PLN (768 EUR) supported by the Leading National Research Centre (KNOW) programme of the Wrocław Center of Biotechnology for years 2014–2018.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="Species" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <h2>Study species</h2>
+          <p class="lead">This is the list of taxa which I'm working with (or plan to work). In fact I often work on other species, especially in the context of GIS and distribution modeling. But for the listed taxa I maintain a collection of DNA samples, extracted either from specimens collected in the field or from the herbarium.</p>
+          <ul>
+            <li><b><i>Leucanthemum</i></b></li>
+            <li><i>Artemisia</i></li>
+            <li>Anthemideae</li>
+            <li><i>Chrysanthellum</i></li>
+            <li><i>Bidens</i></li>
+            <li><i>Fitchia</i> & <i>Oparanthus</i></li>
+            <li>Coreopsideae</li>
+            <li><b>Asteraceae</b></li>
+            <li><i>Jasione montana</i></li>
+            <li><i>Larix decidua</i> / <i>L. polonica</i> / <i>L. sibirica</i></li>
+            <li><i>Pleurospermum austriacum</i></li>
+            <li>also other plants and animals...</li>
+          </ul>
+          <h2>Excursions</h2>
+          <p class="lead">Since I started to work scientifically, one of my goals was to connect laboratory and fieldwork. Therefore, excursions are an important part of my research because studying plants inherently means that they will not come to me and I need to travel to collect them. I often travel specifically to collect samples, but even on holidays I usually collect some samples for further studies... So far I have been in the following areas:</p>
+          <ul>
+            <li>Russia (Tomsk, Tuva) - 2008</li>
+            <li>Spain - 2007, 2010, 2011, 2020</li>
+            <li>Ukraine (Crimea) - 2009</li>
+            <li>Turkey - 2009</li>
+            <li>Italy - 2010, 2012</li>
+            <li>France - 2010</li>
+            <li>Slovakia - 2017, 2018</li>
+            <li>Romania - 2018, 2019</li>
+            <li>Mexico (Veracruz) - 2017</li>
+            <li>Bosnia and Herzegovina - 2017, 2018</li>
+            <li>Croatia - 2017, 2018</li>
+            <li>Montenegro - 2018</li>
+            <li>Ukraine (Carpathians) - 2019</li>
+            <li>Germany - I lived there in 2009-2014</li>
+            <li>Czech Republic - many times, especially Polish-Czech border</li>
+            <li>and of course I visited many areas within Poland</li>
+          </ul>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="Publications">
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <h2>Publications</h2>
+          <p class="lead">For the most recent list of publications see my profile on <a href="https://scholar.google.com/citations?user=3_z6RScAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Kamil_Konowalik" target="_blank">Research Gate</a>. My publications include:</p>
+          <ul>
+            <li><b>Konowalik, K.</b>, Nosol, A., 2021. <big>Evaluation metrics and validation of presence-only species distribution models based on distributional maps with varying coverage.</big> Scientific Reports 11, 1482. <a href="https://doi.org/10.1038/s41598-020-80062-1" target="_blank">https://doi.org/10.1038/s41598-020-80062-1</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1038/s41598-020-80062-1></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1038/s41598-020-80062-1" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Tomasello, S., <b>Konowalik, K.</b>, 2020. <big>On the <i>Leucanthemopsis alpina</i> (L.) Heywood growing in the Illyrian region.</big> PhytoKeys 161, 27–40. <a href="https://doi.org/10.3897/phytokeys.161.53384" target="_blank">https://doi.org/10.3897/phytokeys.161.53384</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.3897/phytokeys.161.53384></div> 
+<a href="https://plu.mx/plum/a/?doi=10.3897/phytokeys.161.53384" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Konowalik, A., Najbar, A., <b>Konowalik, K.</b>, Dylewski, Ł., Frydlewicz, M., Kisiel, P., Starzecka, A., Zaleśna, A., Kolenda, K., 2020. <big>Amphibians in an urban environment: a case study from a central European city (Wrocław, Poland).</big> Urban Ecosyst 23, 235–243. <a href="https://doi.org/10.1007/s11252-019-00912-3" target="_blank">https://doi.org/10.1007/s11252-019-00912-3</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1007/s11252-019-00912-3></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1007/s11252-019-00912-3" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Proćków, M., <b>Konowalik, K.</b>, Proćków, J., 2019. <big>Contrasting effects of climate change on the European and global potential distributions of two Mediterranean helicoid terrestrial gastropods.</big> Reg Environ Change 19, 2637–2650. <a href="https://doi.org/10.1007/s10113-019-01573-w" target="_blank">https://doi.org/10.1007/s10113-019-01573-w</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1007/s10113-019-01573-w></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1007/s10113-019-01573-w" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li><b>Konowalik, K.</b>, Kolanowska, M., 2018. <big>Climatic niche shift and possible future spread of the invasive South African Orchid <i>Disa bracteata</i> in Australia and adjacent areas.</big> PeerJ 6, e6107. <a href="https://doi.org/10.7717/peerj.6107" target="_blank">https://doi.org/10.7717/peerj.6107</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=doi.org/10.7717/peerj.6107></div>
+<a href="https://plu.mx/plum/a/?doi=10.7717/peerj.6107" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Oberprieler, C., <b>Konowalik, K.</b>, Fackelmann, A., Vogt, R., 2018. <big>Polyploid speciation across a suture zone: phylogeography and species delimitation in S French <i>Leucanthemum</i> Mill. representatives (Compositae–Anthemideae).</big> Plant Syst Evol 304, 1141–1155. <a href="https://doi.org/10.1007/s00606-018-1537-9" target="_blank">https://doi.org/10.1007/s00606-018-1537-9</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=doi.org/10.1007/s00606-018-1537-9></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1007/s00606-018-1537-9" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Vogt, R., <b>Konowalik, K.</b>, Oberprieler, C., 2018. <big>Karyological analysis reveals two new polyploid marguerite taxa (<i>Leucanthemum</i>, Compositae–Anthemideae) in S France and NW Italy.</big> Willdenowia 48, 221–226. <a href="https://doi.org/10.3372/wi.48.48204" target="_blank">https://doi.org/10.3372/wi.48.48204</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.3372/wi.48.48204></div> 
+<a href="https://plu.mx/plum/a/?doi=10.3372/wi.48.48204" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li><b>Konowalik, K.</b>, Proćków, M., Proćków, J., Aug. 2017. <big>Climatic niche of <i>Selinum alatum</i> (Apiaceae, Selineae), a new invasive plant species in Central Europe and its alterations according to the climate change scenarios: Are the European mountains threatened by invasion?</big> PLOS ONE 12 (8), e0182793+. <a href="https://doi.org/10.1371/journal.pone.0182793" target="_blank">https://doi.org/10.1371/journal.pone.0182793</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1371/journal.pone.0182793></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1371/journal.pone.0182793" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Oberprieler, C., Wagner, F., Tomasello, S., <b>Konowalik, K.</b>, Jul. 2017. <big>A permutation approach for inferring species networks from gene trees in polyploid complexes by minimising deep coalescences.</big> Methods Ecol Evol 8 (7), 835-849. <a href="https://doi.org/10.1111/2041-210X.12694" target="_blank">https://doi.org/10.1111/2041-210X.12694</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1111/2041-210X.12694></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1111/2041-210X.12694" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Kolanowska, M., Grochocka, E., <b>Konowalik, K.</b>, May 2017. <big>Phylogenetic climatic niche conservatism and evolution of climatic suitability in Neotropical Angraecinae (Vandeae, Orchidaceae) and their closest African relatives.</big> PeerJ 5:e3328. <a href="https://doi.org/10.7717/peerj.3328" target="_blank">https://doi.org/10.7717/peerj.3328</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.7717/peerj.3328></div> 
+<a href="https://plu.mx/plum/a/?doi=10.7717/peerj.3328" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Stutz, S., Hinz, H. L., <b>Konowalik, K.</b>, Müller-Schärer, H., Oberprieler, C., Schaffner, U., Sep. 2016. <big>Ploidy level in the genus <i>Leucanthemum</i> correlates with resistance to a specialist herbivore.</big> Ecosphere 7 (9):e01460. <a href="https://doi.org/10.1002/ecs2.1460" target="_blank">https://doi.org/10.1002/ecs2.1460</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1002/ecs2.1460></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1002/ecs2.1460" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Kolanowska, M., Mystkowska, K., Kras, M., Dudek, M., <b>Konowalik, K.</b>, Aug. 2016. <big>Evolution of the climatic tolerance and postglacial range changes of the most primitive orchids (Apostasioideae) within Sundaland, Wallacea and Sahul.</big> PeerJ 4, e2384+. <a href="https://doi.org/10.7717/peerj.2384" target="_blank">https://doi.org/10.7717/peerj.2384</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.7717/peerj.2384></div> 
+<a href="https://plu.mx/plum/a/?doi=10.7717/peerj.2384" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li><b>Konowalik, K.</b>, Wagner, F., Tomasello, S., Vogt, R., Oberprieler, C., 2015. <big>Detecting reticulate relationships among diploid <i>Leucanthemum</i> Mill. (Compositae, Anthemideae) taxa using multilocus species tree reconstruction methods and AFLP fingerprinting.</big> Molecular Phylogenetics and Evolution 92, 308-328. <a href="https://doi.org/10.1016/j.ympev.2015.06.003" target="_blank">https://doi.org/10.1016/j.ympev.2015.06.003</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1016/j.ympev.2015.06.003></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1016/j.ympev.2015.06.003" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Kolanowska, M., <b>Konowalik, K.</b>, 2014. <big>Niche Conservatism and Future Changes in the Potential Area Coverage of <i>Arundina graminifolia</i>, an Invasive Orchid Species from Southeast Asia.</big> Biotropica 46 (2), 157-165. <a href="https://doi.org/10.1111/btp.12089" target="_blank">https://doi.org/10.1111/btp.12089</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1111/btp.12089></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1111/btp.12089" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Oberprieler, C., Greiner, R., <b>Konowalik, K.</b>, Vogt, R., 2014. <big>The reticulate evolutionary history of the polyploid NW iberian <i>Leucanthemum pluriflorum</i> clan (Compositae, Anthemideae) as inferred from nrDNA ETS sequence diversity and eco-climatological niche-modelling.</big> Molecular Phylogenetics and Evolution 70, 478-491. <a href="https://doi.org/10.1016/j.ympev.2013.10.013" target="_blank">https://doi.org/10.1016/j.ympev.2013.10.013</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1016/j.ympev.2013.10.013></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1016/j.ympev.2013.10.013" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li>Oberprieler, C., <b>Konowalik, K.</b>, Altpeter, S., Siegert, E., Lo Presti, R. M., Greiner, R., Vogt, R., 2012. <big>Filling of eco-climatological niches in a polyploid complex ? a case study in the plant genus <i>Leucanthemum</i> Mill. (Compositae, Anthemideae) from the Iberian Peninsula.</big> Flora - Morphology, Distribution, Functional Ecology of Plants 207 (12), 862-867. <a href="https://doi.org/10.1016/j.flora.2012.09.012" target="_blank">https://doi.org/10.1016/j.flora.2012.09.012</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1016/j.flora.2012.09.012></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1016/j.flora.2012.09.012" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li><b>Konowalik, K.</b>, Kreitschitz, A., 2012. <big>Morphological and anatomical characteristics of <i>Artemisia absinthium</i> var. <i>absinthium</i> and its polish endemic variety <i>A. absinthium</i> var. <i>calcigena</i>.</big> Plant Systematics and Evolution 298 (7), 1325-1336. <a href="https://doi.org/10.1007/s00606-012-0639-z" target="_blank">https://doi.org/10.1007/s00606-012-0639-z</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1007/s00606-012-0639-z></div> 
+<a href="https://plu.mx/plum/a/?doi=10.1007/s00606-012-0639-z" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+            <li><b>Konowalik, K.</b>, Garcia, S., Pellicer, J., Kreitschitz, A., Vallés, J., 2010. <big>Cytogenetic characterisation of <i>Artemisia absinthium</i> (Asteraceae, Anthemideae) and its polish endemic var. calcigena.</big> Annales Botanici Fennici 47 (6), 477-488. <a href="https://doi.org/10.5735/085.047.0607" target="_blank">https://doi.org/10.5735/085.047.0607</a>
+<div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.5735/085.047.0607></div> 
+<a href="https://plu.mx/plum/a/?doi=10.5735/085.047.0607" class="plumx-plum-print-popup" target="_blank"></a>
+</li>
+          </ul>
+          <p class="lead">Others:</p>
+          <ul>
+            <li>Kolenda, K., Kisiel, P., Konieczny, K., Kuśmierek, N., Starzecka, A., Konowalik, K., 2020. Nowe dane o występowaniu traszki górskiej Ichthyosaura alpestris w północno-wschodniej części Dolnego Śląska / New data on the occurrence of the Alpine newt Ichthyosaura alpestris in the north-eastern part of Lower Silesia. Chrońmy Przyrodę Ojczystą, vol. 75, no. 6, 2019, pp. 459-469.</li>
+            <li>Najbar, A., Konowalik, A., Frydlewicz, M., Kisiel, P., Kolenda, K., Konowalik, K., Starzecka, A., Zaleśna, A., 2019. Płazy miasta Wrocławia–zagrożenia i zalecenia ochronne. Chrońmy Przyrodę Ojczystą, vol. 75, no. 2, pp. 98-112.</li>
+	  </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Teaching">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Teaching and mentoring</h2>
+          <p class="lead">So far I had only once a chance to be a supervisor of a visiting PhD student in my lab. Therefore, I look forward to future collaborations!</p>
+          <ul>
+            <li><a href="https://www.researchgate.net/profile/Elaheh_Oreizi" target="_blank">Elaheh Oreizi</a> - 09.2018-01.2019. We worked together on phylogeny of three sections of Iranian <i>Centaurea</i> L. using chloroplast markers, ITS, and ETS.</li>
+	  </ul>
+          <p class="lead">I have also supervised several theses on master and bachelor level:</p>
+          <ul>
+            <li>Aleksandra Orłowska, B.Sc., 2019/20. Karyotype analysis of selected species from the genus <i>Leucanthemum</i> Mill. occurring in the Carpathian Mts.</li>
+            <li>Agata Nosol, B.Sc., 2018/19. Comparison of algorithms used for species niche modeling in the example of round-leaved oxeye daisy (<i>Leucanthemum rotundifolium</i>, Asteraceae).</li>
+            <li>Izabela Woch, M.Sc., 2016/2018 Induction of polyploidy and its effect on purple coneflower (<i>Echinacea purpurea</i> (L.) Moench).</li>
+            <li>Dorota Szampowalska, B.Sc., 2017/18. Comparison of seed germination of <i>Jasione montana</i> L. var. <i>montana</i> and <i>Jasione montana</i> L. var. <i>litoralis</i> Fries in a various salinity conditions.</li>
+            <li>Adriana Chachuła, B.Sc., 2017/18. Comparison of ecological niches and habitat conditions of species of the genera <i>Fitchia</i> Hook.f. and <i>Oparanthus</i> Scherff (Coreopsideae, Compositae).</li>
+            <li>Olesia Pikula, B.Sc., 2017/18. Reconstruction of ecoclimatic niche of Bulbous Rush (<i>Juncus bulbosus</i>).</li>
+            <li>Natalia Lebica, B.Sc., 2016/17. A preliminary study on the distribution of species from the celandine genus (<i>Ficaria</i> Guett.) within the area of Lower Silesia.</li>
+            <li>support in preparation of theses during PhD at the Univeristy of Regensburg: <a href="https://www.researchgate.net/profile/Florian_Wagner13" target="_blank">Florian Wagner</a>, Andreas Fackelman, <a href="https://www.researchgate.net/profile/Theodor_Poettinger" target="_blank">Theodor Poettinger</a>, Sabrina Altpeter, Katja Grill, and Michael Cordel.</li>
+	  </ul>
+          <p class="lead">I have been involved in quite a lot of courses. Yearly I have lectures or practical exercises for around 100-200 students. The courses which I taught:</p>
+          <ul>
+            <li>Plant Systematics (2nd semester, B.Sc. Biology, Wrocław University of Environmental and Life Sciences) - <small>lecture, excercises, fieldworks</small></li>
+            <li>Applications of Computer Spatial Analyzes (GIS) in Biological Research (2nd & 4th semester, M.Sc. Environmental Biology, Wrocław University of Environmental and Life Sciences) - <small>excercises and fieldworks</small></li>
+            <li>Applications of Computer Spatial Analyzes (GIS) in Biological Research (2nd & 4th semester, M.Sc. Human Biology, Wrocław University of Environmental and Life Sciences) - <small>excercises and fieldworks</small></li>
+            <li>Current Trends in Plant Phylogenetics (2nd semester, M.Sc. Environmental Biology, Wrocław University of Environmental and Life Sciences) - <small>seminar</small></li>
+            <li>Botany (1st semester, B.Sc. Bioinformatics, Wrocław University of Environmental and Life Sciences) - <small>lecture and excercises</small></li>
+            <li>Botany (1st semester, B.Sc. Zootechnics, Wrocław University of Environmental and Life Sciences) - <small>lecture and excercises</small></li>
+            <li>Botany (1st semester, B.Sc. Human Biology, Wrocław University of Environmental and Life Sciences) - <small>excercises</small></li>
+            <li>Genetics (2nd semester, B.Sc. Zootechnics, Wrocław University of Environmental and Life Sciences) - <small>excercises</small></li>
+            <li>Plant Biodiversity and Plant Communities (2nd semester, M.Sc. Environmental Biology, Wrocław University of Environmental and Life Sciences) - <small>excercises</small></li>
+            <li>Molecular plant evolution (Biology, University of Regensburg) - <small>excercises</small></li>
+	  </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="CV">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>CV</h2>
+          <p class="lead">You can find my full CV <a href="CV_Kamil_Konowalik.pdf">here in pdf</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact me</h2>
+          <p class="lead">
+E-mail:
+</p>
+<p><a href="mailto:kamil.konowalik@upwr.edu.pl">kamil.konowalik@upwr.edu.pl</a></p>
+          <p class="lead">
+Correspondence address:
+</p>
+<p>Kamil Konowalik<br>
+Department of Plant Biology<br>
+Institute of Environmental Biology<br>
+Wrocław University of Environmental and Life Sciences<br>
+Kożuchowska 7a<br>
+PL-51-631 Wroclaw, Poland<br>
+tel. (+48) 71 320-5799</p><br>
+<br>
+<div id="mapid" style="width:100%; height: 400px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([51.098455, 17.095870], 17);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1,
+		access_token: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+	}).addTo(mymap);
+	var marker = L.marker([51.097515, 17.095707]).addTo(mymap);
+	marker.bindPopup("<b>Office</b>");
+	var marker = L.marker([51.097812, 17.096031]).addTo(mymap);
+	marker.bindPopup("<b>Greenhouse</b>");
+	var marker = L.marker([51.098455, 17.095870]).addTo(mymap);
+	marker.bindPopup("<b>Laboratory</b>");
+</script>
+<br>
+
+<a href="https://scholar.google.com/citations?user=3_z6RScAAAAJ&hl=en" target="_blank">
+    <img id="logo" src="scholar.jpg" alt="Publons:1432582" width=30 />
+</a>
+<a href="https://www.researchgate.net/profile/Kamil_Konowalik" target="_blank">
+    <img id="logo" src="rg.jpeg" alt="ResearchGate:Kamil_Konowalik" width=30 />
+</a>
+<a href="https://orcid.org/0000-0003-4821-0608" target="_blank">
+    <img id="logo" src="orcid.jpeg" alt="Orcid:0000-0003-4821-0608" width=30 />
+</a>
+<a href="https://twitter.com/kamil_konowalik" target="_blank">
+    <img id="logo" src="twitter.jpg" alt="Twitter:kamil_konowalik" width="30" />
+</a>
+<a href="https://github.com/kkonowalik" target="_blank">
+    <img id="logo" src="github.png" alt="GitHub:kknowalik" width=30 />
+</a>
+<a href="https://publons.com/researcher/1432582/kamil-konowalik/" target="_blank">
+    <img id="logo" src="publons.jpg" alt="Publons:1432582" width=30 />
+</a>
+<a href="https://bazawiedzy.upwr.edu.pl/info/author/UPWr6d361623bd8e4d558d04fba52673c30f/Kamil+Konowalik?tab=main&lang=en&cid=253260" target="_blank">
+    <img id="logo" src="upwr.jpg" alt="Uniwersytet Przyrodniczy we Wrocławiu" width=30 />
+</a>
+<a href="https://www.inaturalist.org/people/1302273" target="_blank">
+    <img id="logo" src="iNaturalist.jpg" alt="iNaturalist" width=30 />
+</a>
+</p>
         </div>
       </div>
     </div>
@@ -92,7 +399,10 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Kamil Konowalik 2020, original code from <a href="https://startbootstrap.com" target="_blank" style="color:white">https://startbootstrap.com</a>
+<br>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/3.js?i=5jz40gdx2io&amp;b=0&amp;s=40&amp;m=2&amp;cl=ffffff&amp;co=007eff&amp;cd=000000&amp;v0=50&amp;v1=80&amp;r=1" async="async"></script>
+</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -106,6 +416,8 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
 </body>
 
