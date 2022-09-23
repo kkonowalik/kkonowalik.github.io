@@ -449,7 +449,7 @@ tel. (+48) 71 320-5799</p><br>
 <div id="mapid" style="width:100%; height: 400px;"></div>
 <script>
 
-	var mymap = L.map('mapid').setView([51.11348327591686, 17.063312866877656], 5);
+	var mymap = L.map('mapid').setView([51.098455, 17.095870], 17);
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
@@ -460,8 +460,12 @@ tel. (+48) 71 320-5799</p><br>
 		zoomOffset: -1,
 		access_token: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
 	}).addTo(mymap);
-	var marker = L.marker([51.11348327591686, 17.063312866877656]).addTo(mymap);
+	var marker = L.marker([51.097515, 17.095707]).addTo(mymap);
 	marker.bindPopup("<b>Office</b>");
+	var marker = L.marker([51.097812, 17.096031]).addTo(mymap);
+	marker.bindPopup("<b>Greenhouse</b>");
+	var marker = L.marker([51.098455, 17.095870]).addTo(mymap);
+	marker.bindPopup("<b>Laboratory</b>");
 </script>
 <br>
 <p class="lead">
