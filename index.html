@@ -25,16 +25,35 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
+
 	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-		#map {
-			width: 600px;
-			height: 400px;
-		}
-	</style>
+  /* Prevents horizontal scrolling globally */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* This stops the 'sideways' scroll */
+    width: 100%;
+  }
+
+  /* Ensures all images (like the coffee button) stay within their boxes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Fixes your map container for mobile */
+  #mapid {
+    width: 100% !important; 
+    max-width: 100vw;
+  }
+
+  /* Force long URLs/DOIs to wrap so they don't push the screen wide */
+  p, a, li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+</style>
+
 </head>
 
 <body id="page-top">
@@ -85,20 +104,33 @@
       <img id="welcome-img" src="" style="width: 100%; height: auto; max-height: 600px; object-fit: cover; display: none;"> 
     </h1>
 
-    <script>
-      const images = [
-        "in_the_Carpathians.jpg", 
-        "in_the_Carpathians2.JPG", 
-        "in_the_Carpathians3.JPG"
-      ];
+<script>
+  // Wrap in window.onload to ensure mobile browsers are ready
+  window.onload = function() {
+    const images = [
+      "in_the_Carpathians.jpg", 
+      "in_the_Carpathians2.JPG", 
+      "in_the_Carpathians3.JPG"
+    ];
 
-      const randomIndex = Math.floor(Math.random() * images.length);
-      const imgElement = document.getElementById('welcome-img');
-      
-      // Set the source and make it visible only after the source is set
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const imgElement = document.getElementById('welcome-img');
+    
+    if (imgElement) {
+      // Set the source
       imgElement.src = images[randomIndex];
+      
+      // Only show the image once the source is actually set
       imgElement.style.display = 'inline-block';
-    </script>
+      
+      // Fallback: If the image fails to load (e.g., case sensitivity error), 
+      // it tries to load the first one automatically.
+      imgElement.onerror = function() {
+        this.src = "in_the_Carpathians.jpg";
+      };
+    }
+  };
+</script>
 
     <p class="lead"> 
   <big>Hi!</big> I'm Kamil Konowalik and this is my personal website in English. 
