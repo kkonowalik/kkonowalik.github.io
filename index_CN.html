@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 
@@ -9,17 +9,14 @@
   <meta name="Kamil Konowalik" content="">
   <meta name="google-site-verification" content="db1xUK7-j9nrJGkN-7K8uaCbcV52Yi9D1ropTIdpV0c"/>
   <meta name="google-site-verification" content="vpb4Qw1ALrPvJsWINOFyVq3ICLiIARRJc9Nr3pBMhQo" />
-  <title>Kamil Konowalik - website</title>
+  <title>Kamil Konowalik - 个人网站</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!-- Leaflet map -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
   crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -27,27 +24,27 @@
   crossorigin=""></script>
 
 	<style>
-  /* Prevents horizontal scrolling globally */
+  /* 全局防止横向滚动 */
   html, body {
     height: 100%;
     margin: 0;
-    overflow-x: hidden; /* This stops the 'sideways' scroll */
+    overflow-x: hidden; 
     width: 100%;
   }
 
-  /* Ensures all images (like the coffee button) stay within their boxes */
+  /* 确保所有图片保持在容器范围内 */
   img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Fixes your map container for mobile */
+  /* 适配移动端的地图容器 */
   #mapid {
     width: 100% !important; 
     max-width: 100vw;
   }
 
-  /* Force long URLs/DOIs to wrap so they don't push the screen wide */
+  /* 强制长URL/DOI自动换行 */
   p, a, li {
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -58,7 +55,6 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Kamil Konowalik</a>
@@ -68,35 +64,35 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About me</a>
+            <a class="nav-link js-scroll-trigger" href="#about">关于我</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#Projects">科研项目</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Species">Collections</a>
+            <a class="nav-link js-scroll-trigger" href="#Species">研究物种</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Teaching">Teaching</a>
+            <a class="nav-link js-scroll-trigger" href="#Teaching">教学经历</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Publications">Publications</a>
+            <a class="nav-link js-scroll-trigger" href="#Publications">学术论文</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#Contact">联系方式</a>
           </li>
  <li class="nav-item">
   <a class="nav-link js-scroll-trigger" href="index_PL.html">
-    Polish 
+    波兰语 
     <img src="Poland_January_Uprising.png" 
-         alt="Polish Version" 
+         alt="波兰语版本" 
          style="height: 1em; vertical-align: middle; margin-left: 5px;">
   </a>
  <li class="nav-item">
-  <a class="nav-link js-scroll-trigger" href="index_CN.html">
-    Chinese 
-    <img src="Flag_of_China.png" 
-         alt="Chinese Version" 
+  <a class="nav-link js-scroll-trigger" href="index.html">
+    English 
+    <img src="Flag_of_United_Kingdom.png" 
+         alt="English Version" 
          style="height: 1em; vertical-align: middle; margin-left: 5px;">
   </a>
 </li>
@@ -112,7 +108,6 @@
     </h1>
 
 <script>
-  // Wrap in window.onload to ensure mobile browsers are ready
   window.onload = function() {
     const images = [
       "in_the_Carpathians.jpg", 
@@ -124,14 +119,8 @@
     const imgElement = document.getElementById('welcome-img');
     
     if (imgElement) {
-      // Set the source
       imgElement.src = images[randomIndex];
-      
-      // Only show the image once the source is actually set
       imgElement.style.display = 'inline-block';
-      
-      // Fallback: If the image fails to load (e.g., case sensitivity error), 
-      // it tries to load the first one automatically.
       imgElement.onerror = function() {
         this.src = "in_the_Carpathians.jpg";
       };
@@ -140,9 +129,8 @@
 </script>
 
     <p class="lead"> 
-  <big>Hi!</big> I'm Kamil Konowalik and this is my personal website in English. 
-  If you would like to view version in Polish 
-  <a href="index_PL.html" style="color: #FFD700;"><b>click here</b></a> or in Chinese  <a href="index_CN.html" style="color: #FFD700;"><b>click here</b></a>
+  <big>您好！</big>我是 Kamil Konowalik，这是我的中文个人网站。 
+  如果您想查看波兰语版本请 <a href="index_PL.html" style="color: #FFD700;"><b>点击这里</b></a>，查看英文版本请 <a href="index.html" style="color: #FFD700;"><b>点击这里</b></a>。 "我正在学习中文，但这个翻译是我用人工智能（AI）制作的，所以可能会有一些错误，希望我以后能纠正它们 ;)
 </p>
   </div>
 </header>
@@ -152,33 +140,25 @@
   <section id="about">
     <div class="container">
 
-      <!-- Project One -->
       <div class="row">
         <div class="col-md-4">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="kamil_konowalik1.jpg" alt="Me and one of the highest populations of L. rotundifolium found by Bogumił Pawłowski onthe slopes of Ciemniak in High Tatra Mts. (Western Carpathians)">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="kamil_konowalik1.jpg" alt="我和由 Bogumił Pawłowski 在西喀尔巴阡山脉西塔特拉山 Ciemniak 山坡上发现的最大圆叶滨菊（L. rotundifolium）种群之一">
         </div>
         <div class="col-md-6">
-          <h3>About me</h3>
-          <p class="lead"><big>I</big>'m a botanist working also in the fields of evolutionary biology and biogeography. I'm especially interested in investigating the causes that lead to the separation of populations and the establishment of new species. This separation is manifested at different levels: morphological, ecological, and genetic. This brought me to work on hybridization, polyploidy, systematics, phylogenetics, population genetics, cytogenetics, plant morphology, and species distribution modeling (SDM).
+          <h3>关于我</h3>
+          <p class="lead"><big>我</big>是一名植物学家，同时也活跃在进化生物学和生物地理学领域。我特别感兴趣的是研究导致种群分离及新物种形成的机制。这种分离表现在不同的层面上：形态学、生态学和遗传学。这促使我开展关于杂交、多倍体、系统分类学、系统发育学、群体遗传学、细胞遗传学、植物形态学以及物种分布模型（SDM）的研究。
 <br>
-<big>I</big> graduated from the <a href="https://uni.wroc.pl/en/" target="_blank">University of Wroclaw</a> (MSc, 2009) and the <a href="https://www.uni-regensburg.de/en" target="_blank">University of Regensburg</a> (PhD, 2014). Currently, I'm an assistant professor at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University of Environmental and Life Sciences</a> (<a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank">Wrocław</a>, Poland) where I'm engaged in research and teaching. 
+<big>我</big>毕业于<a href="https://uni.wroc.pl/en/" target="_blank">弗罗茨瓦夫大学</a>（硕士，2009年）和<a href="https://www.uni-regensburg.de/en" target="_blank">雷根斯堡大学</a>（博士，2014年）。目前，我是<a href="https://www.upwr.edu.pl/en/" target="_blank">弗罗茨瓦夫环境与生命科学大学</a>（波兰<a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank">弗罗茨瓦夫</a>）的助理教授，从事科研与教学工作。 
 <br>
-<big>I</big> have a lot of experience in many laboratory methods including DNA/PCR-based techniques, cytometry, and cytogenetics. I'm also interested in GIS, environmental niche modeling (ENM), maps and scientific illustration. 
+<big>我</big>在许多实验室方法上拥有丰富的经验，包括基于DNA/PCR的技术、流式细胞术和细胞遗传学。我对GIS（地理信息系统）、环境生态位模型（ENM）、地图和科学插图也充满兴趣。 
 <br>
-<big>U</big>ntil 2022 I was working on the project Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae) where I studied <a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">Carpathian</a> endemic <a href="https://www.gbif.org/species/5400956" target="_blank"><i>Leucanthemum rotundifolium</i></a> and associated taxa using molecular markers, cytogenetics and connecting it with environmental variables. In my research, I focus mainly on the <a href="https://en.wikipedia.org/wiki/Asteraceae" target="_blank">Asteraceae</a> family, the biggest family of land plants with about 25000 species with an enormous variability.  
+<big>直</big>到2022年，我一直在主持“喀尔巴阡山脉滨菊属（<i>Leucanthemum</i>，菊科）的系统发育地理学与杂交研究”项目。在此期间，我利用分子标记、细胞遗传学手段研究了<a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">喀尔巴阡山脉</a>特有种<a href="https://www.gbif.org/species/5400956" target="_blank">圆叶滨菊（<i>Leucanthemum rotundifolium</i>）</a>及其相关类群，并将其与环境变数相结合。我的研究主要集中在<a href="https://en.wikipedia.org/wiki/Asteraceae" target="_blank">菊科（Asteraceae）</a> —— 这是陆生植物中最大的科，拥有约25000个物种，具有极高的多样性。  
 <br>
-<big>P</big>rivately I live with my family in a small house near <a href="https://en.wikipedia.org/wiki/Ole%C5%9Bnica" target="_blank">Oleśnica</a> where I usually work in the garden and do endless renovations of our century-old house :) 
+<big>在</big>生活中，我和家人住在<a href="https://en.wikipedia.org/wiki/Ole%C5%9Bnica" target="_blank">奥莱希尼察（Oleśnica）</a>附近的一栋小房子里。我通常会在花园里忙碌，或者对我那栋有着百年历史的老房子进行无休止的翻修：） 
 </p>
         </div>
       </div>
-      <!-- /.row -->
-<!--
-I'm interested in that because when we look around us we are surrounded by an enourmous species diveristy. If the spatial extent is increased this diveristy is even inreased. Thus I'm studying the world around us. How evolution works and what are the outcomes of it? What are the effects of speciation proceses and how it works? Interested in the phylogeography and speciation. I also like GIS and combining geographic and biological data. And
-I'm also interested in other taxa of plants and algae.
--->
-<!--
-I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University of Environmental and Life Sciences</a> in <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank">Wrocław</a>, Poland. Currently, I'm working on the project <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a> where I'm studying <a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">Carpathian</a> endemic <a href="https://www.gbif.org/species/5400956" target="_blank"><i>Leucanthemum rotundifolium</i></a> and associated taxa using molecular markers and cytogenetics. I have worked on phylogenetics, population genetics, cytogenetics, plant morphology, species distribution modeling (SDM), and GIS. I'm interested in the evolution of plants and especially in their speciation. Thus I'm studying hybridization and polyploidy which are the most prominent forces linked to those processes in plants.<br>In my research, I focus mainly on the <a href="https://en.wikipedia.org/wiki/Asteraceae" target="_blank">Asteraceae</a> family, the biggest family of land plants with about 25000 species with an enormous variability. I like combining geographical and biological data thus main activities are centered on biogeography. Moreover, since my childhood, I like experiments so whenever I have a possibility I try to perform some experimental works. Privately I like gardening and traveling.
--->
+
         </div>
       </div>
     </div>
@@ -186,8 +166,8 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
       <div class="row">
         <div class="col-lg-8 mx-auto">
 <br>
-          <h2>CV</h2>
-          <p class="lead">You can find my full CV <a href="CV_Kamil_Konowalik.pdf">here in pdf</a>.</p>
+          <h2>个人简历</h2>
+          <p class="lead">您可以在这里下载我的 <a href="CV_Kamil_Konowalik.pdf">PDF版完整简历</a>。</p>
         </div>
       </div>
     </div>
@@ -199,28 +179,28 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Projects</h2>
-          <p class="lead">Until 2022 I was realizing the project <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a> You can see its custom webpage <a href="https://kkonowalik.github.io/daisy">here</a>. The projects in which I participated are listed here:</p>
+          <h2>科研项目</h2>
+          <p class="lead">直到2022年，我都在主持 <a href="https://projekty.ncn.gov.pl/index.php?projekt_id=352843" target="_blank">“喀尔巴阡山脉滨菊属（<i>Leucanthemum</i>，菊科）的系统发育地理学与杂交研究”</a> 项目。您可以点击 <a href="https://kkonowalik.github.io/daisy">这里</a> 访问该项目的定制网页。我参与的项目列表如下：</p>
           <ul>
-            <li>Species delimitation using genetic data in the genus <i>Chrysanthellum</i> and closely related taxa from the tribe Coreopsideae (Asteraceae) - <b>principal investigator</b>, 2023, funding 50000 PLN (11600 EUR) from internal grant of Wrocław University of Environmental and Life Sciences</li>
-            <li><a href="https://kkonowalik.github.io/daisy">Phylogeography and hybridization within Carpathian ox-eye daisies (<i>Leucanthemum</i>, Compositae)</a> - <b>principal investigator</b>, 2017-2022, funding 561230 PLN (125000 EUR) from NCN (National Science Centre, Poland). Look at the <a href="https://kkonowalik.github.io/daisy">project website here</a>.</li>
-            <li>Phylogeny of three sections within genus <i>Centaurea</i> (Compositae) - <b>principal investigator</b>, 2019, funding 4318.43 PLN (946 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
-            <li>Phylogeny and biogeography of genus <i>Chrysanthellum</i> Rich. (Coreopsideae, Asteraceae) - <b>principal investigator</b>, 2018-2019, funding 10232 PLN (2245 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
-            <li>Analysis of variability of selected chloroplast markers in phylogeographic studies of <i>Pleurospermum austriacum</i> (Apiaceae) - <b>principal investigator</b>, 2017-2018, funding 9999.60 PLN (2200 EUR) from Polish Ministry of Science and Higher Education (through WUELS)</li>
-            <li><a href="https://gepris.dfg.de/gepris/projekt/132607997?context=projekt&task=showDetail&id=132607997&" target="_blank">Consequences of polyploidy: Phylogeny, phyloecology, and expression of duplicated genes in <i>Leucanthemum</i> Mill. (Compositae, Anthemideae) </a> - <b>grant executor</b> (PhD position), 2009-2014, funding obtained by <a href="https://www.uni-regensburg.de/biologie-vorklinische-medizin/evolution-systematik-pflanzen/index.html" target="_blank">Prof. Christoph Oberprieler</a> and <a href="https://www.bgbm.org/en/staff/dr-robert-vogt" target="_blank">Dr. Robert Vogt</a> from DFG (German Research Foundation, Germany).</li></p></ul>
- <p class="lead">Research stays	:</p>
+            <li>利用遗传数据对金纽扣属（<i>Chrysanthellum</i>）及核心菊族（Coreopsideae，菊科）近缘类群进行物种界定 —— <b>项目负责人</b>，2023年，获弗罗茨瓦夫环境与生命科学大学内部基金资助 50000 兹罗提（11600 欧元）。</li>
+            <li><a href="https://kkonowalik.github.io/daisy">喀尔巴阡山脉滨菊属（<i>Leucanthemum</i>，菊科）的系统发育地理学与杂交研究</a> —— <b>项目负责人</b>，2017-2022年，获波兰国家科学中心（NCN）资助 561230 兹罗提（125000 欧元）。请点击此处访问 <a href="https://kkonowalik.github.io/daisy">项目网站</a>。</li>
+            <li>矢车菊属（<i>Centaurea</i>，菊科）三个组的系统发育研究 —— <b>项目负责人</b>，2019年，获波兰科学与高等教育部资助（通过弗罗茨瓦夫环境与生命科学大学）4318.43 兹罗提（946 欧元）。</li>
+            <li>金纽扣属（<i>Chrysanthellum</i> Rich.，核心菊族，菊科）的系统发育与生物地理学研究 —— <b>项目负责人</b>，2018-2019年，获波兰科学与高等教育部资助（通过弗罗茨瓦夫环境与生命科学大学）10232 兹罗提（2245 欧元）。</li>
+            <li>奥地利双叶芹（<i>Pleurospermum austriacum</i>，伞形科）系统发育地理学研究中特定叶绿体标记的变异性分析 —— <b>项目负责人</b>，2017-2018年，获波兰科学与高等教育部资助（通过弗罗茨瓦夫环境与生命科学大学）9999.60 兹罗提（2200 欧元）。</li>
+            <li><a href="https://gepris.dfg.de/gepris/projekt/132607997?context=projekt&task=showDetail&id=132607997&" target="_blank">多倍体的后果：滨菊属（<i>Leucanthemum</i> Mill.，菊科-春黄菊族）的系统发育、系统生态学及重复基因表达</a> —— <b>项目执行人</b>（博士研究生职位），2009-2014年，该资助由 <a href="https://www.uni-regensburg.de/biologie-vorklinische-medizin/evolution-systematik-pflanzen/index.html" target="_blank">Christoph Oberprieler 教授</a> 和 <a href="https://www.bgbm.org/en/staff/dr-robert-vogt" target="_blank">Robert Vogt 博士</a> 从德国科学基金会（DFG）获得。</li></p></ul>
+ <p class="lead">研究访学：</p>
           <ul>            
-<li>Research stay at the University of Veracruz (Mexico) funded by Erasmus-Mundus MAYA-NET (Mobility As keY factor for quAlity eNhancement of EU and LA univErsiTies”), 2016, 2850 EUR.</li>
-            <li>Cytogenetic characterisation of <i>Artemisia absinthium</i> (FISH) - 2008, short research stay at University of Paris-Sud (Orsay, France) during LLP-Erasmus project.</li>
-            <li>Cytogenetic characterisation of <i>Artemisia absinthium</i> - 2008-2009, research project funded by LLP-Erasmus, University of Barcelona (Spain).</li>
+<li>韦拉克鲁斯大学（墨西哥）研究访学，由 Erasmus-Mundus MAYA-NET 项目（“流动性作为欧洲和拉丁美洲大学质量提升的关键因素”）资助，2016年，2850 欧元。</li>
+            <li>中亚苦蒿（<i>Artemisia absinthium</i>）的细胞遗传学表征（FISH） —— 2008年，在终身学习-埃拉斯穆斯（LLP-Erasmus）项目资助下，赴巴黎第十一大学（法国奥赛）进行短期研究访学。</li>
+            <li>中亚苦蒿的细胞遗传学表征 —— 2008-2009年，由终身学习-埃拉斯穆斯（LLP-Erasmus）项目资助的研究项目，巴塞罗那大学（西班牙）。</li>
           </ul>
-          <p class="lead">Other funding:</p>
+          <p class="lead">其他资助：</p>
           <ul>
-            <li>Internal grant for Student Research Group of Plant Biologists "Mlecz" for project "Comparison of lowland and mountainous populations of synanthropic plants in Karkonosze National Park	", funding ca. 10000 PLN (2200 EUR)</li>
-            <li>Internal grant from Vice-Rector for Research and International Relations (WUELS) for funding of the purchase of research equipment. Flow cytometer, funding 100950 PLN (22131 EUR)</li>
-            <li>Travel award for Phylogenomics Symposium and Software School at Austin (USA), 2016, 1000 USD.</li>
-            <li>Travel award to attend the Evolution Meeting, 2016, 6380 PLN (1400 EUR) supported by the Leading National Research Centre (KNOW) programme of the Wrocław Center of Biotechnology for years 2014–2018.</li>
-            <li>Funding to purchase desktop computer, 2016, 3499 PLN (768 EUR) supported by the Leading National Research Centre (KNOW) programme of the Wrocław Center of Biotechnology for years 2014–2018.</li>
+            <li>“Mlecz”植物生物学学生研究小组内部基金项目：“卡尔科诺谢国家公园伴生植物低地与山地种群的比较”，资助约 10000 兹罗提（2200 欧元）。</li>
+            <li>副校长（研究与国际关系）内部设备购置基金：流式细胞仪，资助 100950 兹罗提（22131 欧元）。</li>
+            <li>奥斯汀（美国）系统发育基因组学研讨会与软件学校旅行奖，2016年，1000 美元。</li>
+            <li>参加进化会议（Evolution Meeting）旅行奖，2016年，获弗罗茨瓦夫生物技术中心2014-2018年度国家领先研究中心（KNOW）计划支持，6380 兹罗提（1400 欧元）。</li>
+            <li>台式电脑购置资助，2016年，获弗罗茨瓦夫生物技术中心2014-2018年度国家领先研究中心（KNOW）计划支持，3499 兹罗提（768 欧元）。</li>
           </ul>
         </div>
       </div>
@@ -231,27 +211,27 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Study species</h2>
-          <p class="lead">This is the list of taxa which I'm working with (or plan to work). In fact I often work on other species, especially in the context of GIS and distribution modeling. But for the listed taxa I maintain a collection of DNA samples, extracted either from specimens collected in the field or from the herbarium.</p>
+          <h2>研究物种</h2>
+          <p class="lead">这是我正在研究（或计划研究）的分类群列表。事实上，我也经常研究其他物种，特别是在GIS和物种分布建模的背景下。但对于下列分类群，我保留了一个DNA样本库，这些样本要么是在野外采集的，要么是从标本馆中提取的。</p>
           <ul>
-            <li><b><i>Leucanthemum</i></b></li>
-            <li><i>Chrysanthellum</i></li>
-            <li><i>Bidens</i></li>
-            <li><i>Artemisia</i></li>
-            <li>Anthemideae</li>
+            <li><b><i>Leucanthemum</i> (滨菊属)</b></li>
+            <li><i>Chrysanthellum</i> (金纽扣属)</li>
+            <li><i>Bidens</i> (鬼针草属)</li>
+            <li><i>Artemisia</i> (蒿属)</li>
+            <li>Anthemideae (春黄菊族)</li>
             <li><i>Fitchia</i> & <i>Oparanthus</i></li>
-            <li>Coreopsideae</li>
-            <li><b>Asteraceae</b></li>
-            <li><i>Jasione montana</i></li>
-            <li><i>Larix decidua</i> / <i>L. polonica</i> / <i>L. sibirica</i></li>
-            <li><i>Pleurospermum austriacum</i></li>
-            <li>also occasionally other plants and animals</li>
+            <li>Coreopsideae (核心菊族)</li>
+            <li><b>Asteraceae (菊科)</b></li>
+            <li><i>Jasione montana</i> (山萝茜)</li>
+            <li><i>Larix decidua</i> / <i>L. polonica</i> / <i>L. sibirica</i> (落叶松属相关种)</li>
+            <li><i>Pleurospermum austriacum</i> (奥地利双叶芹)</li>
+            <li>偶尔也涉及其他动植物</li>
           </ul>
-<h2>You can help me in my research!</h2>
-          <p class="lead">If you would like to help me in my studies or can provide me any material I will be very happy. Specifically if you can provide me seeds and dried material from the above mentioned taxa - especially <i>Leucanthemum</i>, <i>Chrysanthemum s.l.</i>, or <i>Chrysanthellum</i> - I will be really grateful. Also for example if you are unsure about the ploidy of your species and you would like to determine it (it is an important characteristic of some morphologically similar species like <i>Leucanthemum vulgare</i> and <i>L. ircutianum</i>) - I can check it for you if you send me seeds or silica dried material. My address is at the bottom of this site.</p>
-          <h2>Excursions</h2>
-          <p class="lead">Since I started to work scientifically, one of my goals was to connect laboratory and fieldwork. Therefore, excursions are an important part of my research because studying plants inherently means that they will not come to me and I need to travel to collect them. I often travel specifically to collect samples, but even on holidays I usually collect some samples for further studies... So far I have been in many areas around the world, like: Russia, Spain, Ukraine, Turkey, Italy, Slovakia, Romania, Mexico, Bosnia and Herzegovina, Croatia, Montenegro, Germany, Czech Republic, Canada, USA...</p>
-          <p class="lead"> Nowadays, I try to post my observations on iNaturalist as well:<br>
+<h2>您可以为我的研究提供帮助！</h2>
+          <p class="lead">如果您愿意在我的研究中提供帮助或提供任何材料，我将非常高兴。特别是如果您能提供上述分类群的种子和干燥材料 —— 尤其是滨菊属（<i>Leucanthemum</i>）、广义菊花属（<i>Chrysanthemum s.l.</i>）或金纽扣属（<i>Chrysanthellum</i>） —— 我将不胜感激。此外，例如如果您不确定自己采集物种的倍性并希望对其进行鉴定（这是某些形态相似物种的重要特征，如滨菊 <i>Leucanthemum vulgare</i> 和 ircutianum 滨菊 <i>Leucanthemum ircutianum</i>），只要您向我寄送种子或硅胶干燥的材料，我可以帮您检测。我的地址位于本网站的底部。</p>
+          <h2>野外考察</h2>
+          <p class="lead">自从事科学研究以来，我的目标之一就是将实验室工作与野外工作结合起来。因此，野外考察是我研究的重要组成部分，因为研究植物本身就意味着它们不会主动来找我，我需要亲自去采集它们。我经常专门为了采集样本而旅行，但即使在度假期间，我通常也会采集一些样本供进一步研究……到目前为止，我已经去过世界上许多地方，比如：俄罗斯、西班牙、乌克兰、土耳其、意大利、斯洛伐克、罗马尼亚、墨西哥、波斯尼亚和黑塞哥维那、克罗地亚、黑山、德国、捷克共和国、加拿大、美国……</p>
+          <p class="lead"> 现在，我也尝试将我的观察结果发布在 iNaturalist 上：<br>
  <style type="text/css" media="screen">
 .inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
 .inat-widget-header {margin-bottom: 10px;}
@@ -277,11 +257,11 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
   <table class="inat-footer">
     <tr class="inat-user">
         <td class="inat-user-image">
-          <a border="0" href="https://www.inaturalist.org/observations/kamil_konowalik"><img class="usericon" src="https://static.inaturalist.org/attachments/users/icons/1302273/thumb.jpg?1616577817" alt="Thumb" /></a>
+          <a border="0" href="https://www.inaturalist.org/observations/kamil_konowalik"><img class="usericon" src="https://static.inaturalist.org/attachments/users/icons/1302273/thumb.jpg?1616577817" alt="缩略图" /></a>
         </td>
       <td class="inat-value">
         <strong>
-            <a href="https://www.inaturalist.org/observations/kamil_konowalik" target="_blank">My observations on iNaturalist »</a>
+            <a href="https://www.inaturalist.org/observations/kamil_konowalik" target="_blank">我在 iNaturalist 上的观察记录 »</a>
         </strong>
       </td>
     </tr>
@@ -301,49 +281,50 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Teaching and mentoring</h2>
-          <p class="lead">PhD supervisor:</p>
+          <h2>教学与导师工作</h2>
+          <p class="lead">博士生导师：</p>
           <ul>
-            <li><a href="https://www.researchgate.net/profile/Adrian-Wysocki" target="_blank">Adrian Wysocki</a> - 10.2021-onwards. PhD thesis topic: Molecular ecology of bryophyte umbrella species (additional supervisor/co-supervisor)</li>
+            <li><a href="https://www.researchgate.net/profile/Adrian-Wysocki" target="_blank">Adrian Wysocki</a> - 2021.10-2026.04. 博士论文题目：苔藓伞护种的分子生态学（副导师/共同导师）</li>
 	  </ul>
 
-          <p class="lead">Visiting international students:</p>
+          <p class="lead">来访国际学生：</p>
           <ul>
-            <li><a href="https://www.researchgate.net/profile/Elaheh_Oreizi" target="_blank">Elaheh Oreizi</a> - 09.2018-01.2019. We worked together on phylogeny of three sections of Iranian <i>Centaurea</i> L. using chloroplast markers, ITS, and ETS.</li>
+            <li><a href="https://www.researchgate.net/profile/Elaheh_Oreizi" target="_blank">Elaheh Oreizi</a> - 2018.09-2019.01. 我们共同利用叶绿体标记、ITS和ETS研究了伊朗矢车菊属（<i>Centaurea</i> L.）三个组的系统发育。</li>
 	  </ul>
-          <p class="lead">Master students:</p>
+          <p class="lead">硕士研究生：</p>
           <ul>
-            <li>Anita Skorus, M.Sc., 2024/2025. Genetic diversity of endemic <i>Chrysanthemum zawadzkii</i> at a single locality in Europe.</li>
-            <li>Olga Łuczak, M.Sc., 2023/2024. Response of European beech (<i>Fagus sylvatica</i>) to climate warming – genetic variation in a temperature gradient.</li>
-            <li>Izabela Woch, M.Sc., 2016/2018. Induction of polyploidy and its effect on purple coneflower (<i>Echinacea purpurea</i> (L.) Moench).</li>
+            <li>Anita Skorus，硕士，2024/2025年。欧洲单一产地特有种扎瓦茨基菊（<i>Chrysanthemum zawadzkii</i>）的遗传多样性。</li>
+            <li>Olga Łuczak，硕士，2023/2024年。欧洲山毛榉（<i>Fagus sylvatica</i>）对气候变暖的响应 —— 温度梯度中的遗传变异。</li>
+            <li>Izabela Woch，硕士，2016/2018年。多倍体诱导及其对紫锥菊（<i>Echinacea purpurea</i> (L.) Moench）的影响。</li>
 	  </ul>
-          <p class="lead">Bachelor students:</p>
+          <p class="lead">学士本科生：</p>
           <ul>
-            <li>Olga Łuczak, B.Sc., 2021/22. Morphometric analyses in <i>Leucanthemum</i> Mill. occurring in the Carpathian Mts.</li>
-            <li>Aleksandra Orłowska, B.Sc., 2019/20. Karyotype analysis of selected species from the genus <i>Leucanthemum</i> Mill. occurring in the Carpathian Mts.</li>
-            <li>Agata Nosol, B.Sc., 2018/19. Comparison of algorithms used for species niche modeling in the example of round-leaved oxeye daisy (<i>Leucanthemum rotundifolium</i>, Asteraceae).</li>
-            <li>Dorota Szampowalska, B.Sc., 2017/18. Comparison of seed germination of <i>Jasione montana</i> L. var. <i>montana</i> and <i>Jasione montana</i> L. var. <i>litoralis</i> Fries in a various salinity conditions.</li>
-            <li>Adriana Chachuła, B.Sc., 2017/18. Comparison of ecological niches and habitat conditions of species of the genera <i>Fitchia</i> Hook.f. and <i>Oparanthus</i> Scherff (Coreopsideae, Compositae).</li>
-            <li>Olesia Pikula, B.Sc., 2017/18. Reconstruction of ecoclimatic niche of Bulbous Rush (<i>Juncus bulbosus</i>).</li>
-            <li>Natalia Lebica, B.Sc., 2016/17. A preliminary study on the distribution of species from the celandine genus (<i>Ficaria</i> Guett.) within the area of Lower Silesia.</li>
-            <li>support in preparation of theses during PhD at the Univeristy of Regensburg: <a href="https://www.researchgate.net/profile/Florian_Wagner13" target="_blank">Florian Wagner</a>, Andreas Fackelman, <a href="https://www.researchgate.net/profile/Theodor_Poettinger" target="_blank">Theodor Poettinger</a>, Sabrina Altpeter, Katja Grill, and Michael Cordel.</li>
+            <li>Olga Łuczak，学士，2021/22年。喀尔巴阡山脉滨菊属（<i>Leucanthemum</i> Mill.）植物的形态计量学分析。</li>
+            <li>Aleksandra Orłowska，学士，2019/20年。喀尔巴阡山脉滨菊属（<i>Leucanthemum</i> Mill.）特定物种的核型分析。</li>
+            <li>Agata Nosol，学士，2018/19年。物种生态位模型算法的比较研究 —— 以圆叶滨菊（<i>Leucanthemum rotundifolium</i>, 菊科）为例。</li>
+            <li>Dorota Szampowalska，学士，2017/18年。不同盐度条件下山萝茜（<i>Jasione montana</i> L. var. <i>montana</i>）与滨山萝茜（<i>Jasione montana</i> L. var. <i>litoralis</i> Fries）种子萌发的比较。</li>
+            <li>Adriana Chachuła，学士，2017/18年。<i>Fitchia</i> Hook.f. 属与 <i>Oparanthus</i> Scherff 属（核心菊族，菊科）物种的生态位与生境条件比较。</li>
+            <li>Olesia Pikula，学士，2017/18年。球茎灯心草（<i>Juncus bulbosus</i>）的生态气候生态位重建。</li>
+            <li>Natalia Lebica，学士，2016/17年。下西里西亚地区榕毛茛属（<i>Ficaria</i> Guett.）物种分布的初步研究。</li>
+            <li>在雷根斯堡大学攻读博士期间协助指导以下学生的毕业论文准备工作：<a href="https://www.researchgate.net/profile/Florian_Wagner13" target="_blank">Florian Wagner</a>, Andreas Fackelman, <a href="https://www.researchgate.net/profile/Theodor_Poettinger" target="_blank">Theodor Poettinger</a>, Sabrina Altpeter, Katja Grill, 和 Michael Cordel。</li>
 	  </ul>
-          <p class="lead">Engineering students:</p>
+          <p class="lead">工程师/工程学位本科生：</p>
           <ul>
-            <li>Klaudia Michalska, engineer, 2023/2024. Design of ecological corridors for the <i>Pelophylax esculentus</i>.</li>
+            <li>Katarzyna Iwaniuk，工程师，2026/2027年。弗罗茨瓦夫的传粉昆虫走廊。</li>
+            <li>Klaudia Michalska，工程师，2023/2024年。食用绿蛙（<i>Pelophylax esculentus</i>）的生态走廊设计。</li>
 	  </ul>
-          <p class="lead">I have been involved in quite a lot of courses. Yearly I have lectures or practical exercises for around 100-200 students. The courses which I taught:</p>
+          <p class="lead">我参与了相当多的课程教学。每年我为大约100-200名学生讲授理论课或带教实验/实践课。我教授过的课程包括：</p>
           <ul>
-            <li>Biological Monitoring of the Environment <small>(Wrocław University of Environmental and Life Sciences) - lecture, excercises, fieldworks</small></li>
-            <li>Biological Principles of Agriculture <small>(Wrocław University of Environmental and Life Sciences) - lecture, excercises</small></li>
-            <li>Plant Systematics <small>(Wrocław University of Environmental and Life Sciences) - lecture, excercises, fieldworks</small></li>
-            <li>Applications of Computer Spatial Analyzes (GIS) in Biological Research <small>(Wrocław University of Environmental and Life Sciences) - excercises and fieldworks</small></li>
-            <li>Current Trends in Plant Phylogenetics <small>(Wrocław University of Environmental and Life Sciences) - seminar</small></li>
-            <li>Botany <small>(Wrocław University of Environmental and Life Sciences) - lecture and excercises</small></li>
-            <li>Genetics <small>(Wrocław University of Environmental and Life Sciences) - excercises</small></li>
-            <li>Medicinal and poisonous plants <small>(Wrocław University of Environmental and Life Sciences) - part of excercises in the lab</small></li>
-            <li>Plant Biodiversity and Plant Communities <small>(Wrocław University of Environmental and Life Sciences) - part of excercises</small></li>
-            <li>Molecular plant evolution <small>(University of Regensburg) - excercises in the lab</small></li>
+            <li>环境生物监测 <small>（弗罗茨瓦夫环境与生命科学大学）- 讲座、实验/练习、野外实习</small></li>
+            <li>农业生物学原理 <small>（弗罗茨瓦夫环境与生命科学大学）- 讲座、实验/练习</small></li>
+            <li>植物系统学 <small>（弗罗茨瓦夫环境与生命科学大学）- 讲座、实验/练习、野外实习</small></li>
+            <li>计算机空间分析（GIS）在生物学研究中的应用 <small>（弗罗茨瓦夫环境与生命科学大学）- 实验/练习与野外实习</small></li>
+            <li>植物系统发育学最新趋势 <small>（弗罗茨瓦夫环境与生命科学大学）- 学术研讨</small></li>
+            <li>植物学 <small>（弗罗茨瓦夫环境与生命科学大学）- 讲座与实验/练习</small></li>
+            <li>遗传学 <small>（弗罗茨瓦夫环境与生命科学大学）- 实验/练习</small></li>
+            <li>药用与有毒植物 <small>（弗罗茨瓦夫环境与生命科学大学）- 部分实验室练习</small></li>
+            <li>植物生物多样性与植物群落 <small>（弗罗茨瓦夫环境与生命科学大学）- 部分练习</small></li>
+            <li>分子植物进化 <small>（雷根斯堡大学）- 实验室操作/练习</small></li>
 	  </ul>
         </div>
       </div>
@@ -356,8 +337,8 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Publications</h2>
-          <p class="lead">For the most recent list of publications see my profile on <a href="https://scholar.google.com/citations?user=3_z6RScAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Kamil-Konowalik" target="_blank">Research Gate</a>. My publications include:</p>
+          <h2>学术论文</h2>
+          <p class="lead">欲获取最新发表的论文列表，请参阅我在 <a href="https://scholar.google.com/citations?user=3_z6RScAAAAJ&hl=en" target="_blank">Google Scholar</a> 或 <a href="https://www.researchgate.net/profile/Kamil-Konowalik" target="_blank">Research Gate</a> 上的个人主页。我的主要发表文章包括：</p>
           <ul>
             <li>Wysocki, A., Wierzcholska, S., Proćków, J., <b>Konowalik, K.</b>, 2025. <big>Effects of forest management and habitat continuity on the genetic structure and ecological corridors of target epiphytic moss species: A landscape genetic study of <i>Dicranum viride</i></big>. Forest Ecosystems 100373. <a href="https://doi.org/10.1016/j.fecs.2025.100373" target="_blank">https://doi.org/10.1016/j.fecs.2025.100373</a>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1016/j.fecs.2025.100373></div> 
@@ -416,7 +397,7 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
 <a href="https://plu.mx/plum/a/?doi=10.1016/j.scitotenv.2021.148850" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
             <li><b>Konowalik, K.</b>, Nosol, A., 2021. <big>Evaluation metrics and validation of presence-only species distribution models based on distributional maps with varying coverage.</big> Scientific Reports 11, 1482. <a href="https://doi.org/10.1038/s41598-020-80062-1" target="_blank">https://doi.org/10.1038/s41598-020-80062-1</a><br>
-<small>if you are looking for the R code from this publication you can find it <a href="https://github.com/kkonowalik/ENM_evaluation" target="_blank">here: https://github.com/kkonowalik/ENM_evaluation</a></small>
+<small>如果您正在寻找该论文中的 R 代码，可以在这里找到：<a href="https://github.com/kkonowalik/ENM_evaluation" target="_blank">https://github.com/kkonowalik/ENM_evaluation</a></small>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.1038/s41598-020-80062-1></div> 
 <a href="https://plu.mx/plum/a/?doi=10.1038/s41598-020-80062-1" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
@@ -489,26 +470,26 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
 <a href="https://plu.mx/plum/a/?doi=10.5735/085.047.0607" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
           </ul>
-          <p class="lead">Others:</p>
+          <p class="lead">其他发表：</p>
           <ul>
-            <li>Kolenda, K., Kisiel, P., Konieczny, K., Kuśmierek, N., Starzecka, A., <b>Konowalik, K.</b>, 2020. <big>Nowe dane o występowaniu traszki górskiej <i>Ichthyosaura alpestris</i> w północno-wschodniej części Dolnego Śląska / New data on the occurrence of the Alpine newt <i>Ichthyosaura alpestris</i> in the north-eastern part of Lower Silesia.</big> Chrońmy Przyrodę Ojczystą, vol. 75, no. 6, 2019, pp. 459-469. [in Polish with an English abstract] <a href="https://www.researchgate.net/publication/340137267_Nowe_dane_o_wystepowaniu_traszki_gorskiej_Ichthyosaura_alpestris_w_polnocno-wschodniej_czesci_Dolnego_Slaska_New_data_on_the_occurrence_of_the_Alpine_newt_Ichthyosaura_alpestris_in_the_north-eastern_p" target="_blank">link to ResearchGate</a></li>
-            <li>Najbar, A., Konowalik, A., Frydlewicz, M., Kisiel, P., Kolenda, K., <b>Konowalik, K.</b>, Starzecka, A., Zaleśna, A., 2019. <big>Płazy miasta Wrocławia–zagrożenia i zalecenia ochronne. / Amphibians of the city of Wrocław - threats and recommendations for conservation.</big> Chrońmy Przyrodę Ojczystą, vol. 75, no. 2, pp. 98-112. [in Polish with an English abstract] <a href="https://www.researchgate.net/publication/334282704_Plazy_miasta_Wroclawia_-_zagrozenia_i_zalecenia_ochronne_Amphibians_of_the_city_of_Wroclaw_-_threats_and_recommendations_for_conservation" target="_blank">link to ResearchGate</a></li>
+            <li>Kolenda, K., Kisiel, P., Konieczny, K., Kuśmierek, N., Starzecka, A., <b>Konowalik, K.</b>, 2020. <big>Nowe dane o występowaniu traszki górskiej <i>Ichthyosaura alpestris</i> w północno-wschodniej części Dolnego Śląska / 下西里西亚东北部阿尔卑斯高山螈（<i>Ichthyosaura alpestris</i>）分布新数据。</big> Chrońmy Przyrodę Ojczystą, vol. 75, no. 6, 2019, pp. 459-469. [波兰语，附英文摘要] <a href="https://www.researchgate.net/publication/340137267_Nowe_dane_o_wystepowaniu_traszki_gorskiej_Ichthyosaura_alpestris_w_polnocno-wschodniej_czesci_Dolnego_Slaska_New_data_on_the_occurrence_of_the_Alpine_newt_Ichthyosaura_alpestris_in_the_north-eastern_p" target="_blank">ResearchGate 链接</a></li>
+            <li>Najbar, A., Konowalik, A., Frydlewicz, M., Kisiel, P., Kolenda, K., <b>Konowalik, K.</b>, Starzecka, A., Zaleśna, A., 2019. <big>Płazy miasta Wrocławia–zagrożenia i zalecenia ochronne. / 弗罗茨瓦夫市的两栖动物 —— 威胁与保护建议。</big> Chrońmy Przyrodę Ojczystą, vol. 75, no. 2, pp. 98-112. [波兰语，附英文摘要] <a href="https://www.researchgate.net/publication/334282704_Plazy_miasta_Wroclawia_-_zagrozenia_i_zalecenia_ochronne_Amphibians_of_the_city_of_Wroclaw_-_threats_and_recommendations_for_conservation" target="_blank">ResearchGate 链接</a></li>
 	  </ul>
-          <p class="lead">Preprints:</p>
+          <p class="lead">预印本：</p>
           <ul>
-            <li>Villhauer, H., Hellwig, T., Labarosa, S. J., Moore, J., Wysocki, A., Straube, H., Durka, W., Brankov, M., <b>Konowalik, K.</b>, Blume, D. V. M., Kheloufi, A., Mansouri, L. M., Moreno, J. M. B., Neira, P., Torra, J., Silva, L. P. da, Santi, F., Royo-Esnal, A., Rodríguez-García, E., … Bucharova, A., 2026. <big>Climate-driven in-situ trait variation in an annual ruderal grass across Europe</big> bioRxiv, <a href="https://doi.org/10.64898/2026.01.19.700245" target="_blank">https://doi.org/10.64898/2026.01.19.700245</a> --> not published <big>yet</big>
+            <li>Villhauer, H., Hellwig, T., Labarosa, S. J., Moore, J., Wysocki, A., Straube, H., Durka, W., Brankov, M., <b>Konowalik, K.</b>, Blume, D. V. M., Kheloufi, A., Mansouri, L. M., Moreno, J. M. B., Neira, P., Torra, J., Silva, L. P. da, Santi, F., Royo-Esnal, A., Rodríguez-García, E., … Bucharova, A., 2026. <big>Climate-driven in-situ trait variation in an annual ruderal grass across Europe</big> bioRxiv, <a href="https://doi.org/10.64898/2026.01.19.700245" target="_blank">https://doi.org/10.64898/2026.01.19.700245</a> --> <big>尚未正式发表</big>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.64898/2026.01.19.700245></div> 
 <a href="https://plu.mx/plum/a/?doi=10.64898/2026.01.19.700245" class="plumx-plum-print-popup" target="_blank"></a>
 </li>          
-  <li>Skorus, A., & <b>Konowalik, K.</b>, 2025. <big>Genetic Structure and Population Differentiation of <i>Chrysanthemum zawadzkii</i> in Its Isolated European Range.</big> EcoEvoRxiv, <a href="https://doi.org/10.32942/X27931" target="_blank">https://doi.org/10.32942/X27931</a> --> not published <big>yet</big>
+  <li>Skorus, A., & <b>Konowalik, K.</b>, 2025. <big>Genetic Structure and Population Differentiation of <i>Chrysanthemum zawadzkii</i> in Its Isolated European Range.</big> EcoEvoRxiv, <a href="https://doi.org/10.32942/X27931" target="_blank">https://doi.org/10.32942/X27931</a> --> <big>尚未正式发表</big>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.32942/X27931></div> 
 <a href="https://plu.mx/plum/a/?doi=10.32942/X27931" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
-            <li><b>Konowalik, K.</b>, 2021/2022. <big>Phylogeography and colonization pattern of subendemic round-leaved oxeye daisy from the Dinarides to the Carpathians.</big> Research Square, <a href="https://doi.org/10.21203/rs.3.rs-1184231/v1" target="_blank">https://doi.org/10.21203/rs.3.rs-1184231/v1</a> --> published in <big>Scientific Reports</big>
+            <li><b>Konowalik, K.</b>, 2021/2022. <big>Phylogeography and colonization pattern of subendemic round-leaved oxeye daisy from the Dinarides to the Carpathians.</big> Research Square, <a href="https://doi.org/10.21203/rs.3.rs-1184231/v1" target="_blank">https://doi.org/10.21203/rs.3.rs-1184231/v1</a> --> 已发表于 <big>Scientific Reports</big>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.21203/rs.3.rs-1184231/v1></div> 
 <a href="https://plu.mx/plum/a/?doi=10.21203/rs.3.rs-1184231/v1" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
-            <li>Liu, L., Low, S.L., Feng, Y., Ge, B., <b>Konowalik, K.</b>, Li, P., 2021. <big>Development of Genomic Resources From <i>Crossostephium Chinense</i> (Asteraceae) Based on Genome Skimming Data.</big> Research Square, <a href="https://doi.org/10.21203/rs.3.rs-280353/v1" target="_blank">https://doi.org/10.21203/rs.3.rs-280353/v1</a> --> published in <big><a href="https://doi.org/10.1007/s11033-021-06590-9" target="_blank">Molecular Biology Reports</a></big>
+            <li>Liu, L., Low, S.L., Feng, Y., Ge, B., <b>Konowalik, K.</b>, Li, P., 2021. <big>Development of Genomic Resources From <i>Crossostephium Chinense</i> (Asteraceae) Based on Genome Skimming Data.</big> Research Square, <a href="https://doi.org/10.21203/rs.3.rs-280353/v1" target="_blank">https://doi.org/10.21203/rs.3.rs-280353/v1</a> --> 已发表于 <big><a href="https://doi.org/10.1007/s11033-021-06590-9" target="_blank">Molecular Biology Reports</a></big>
 <div data-badge-type='1' class='altmetric-embed' data-badge-popover='left' data-doi=10.21203/rs.3.rs-280353/v1></div> 
 <a href="https://plu.mx/plum/a/?doi=10.21203/rs.3.rs-280353/v1" class="plumx-plum-print-popup" target="_blank"></a>
 </li>
@@ -524,21 +505,21 @@ I work at the <a href="https://www.upwr.edu.pl/en/" target="_blank">University o
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact me</h2>
+          <h2>联系我</h2>
           <p class="lead">
-E-mail:
+电子邮箱：
 </p>
 <p><a href="mailto:kamil.konowalik@upwr.edu.pl">kamil.konowalik@upwr.edu.pl</a></p>
           <p class="lead">
-Correspondence address:
+通信地址：
 </p>
 <p>Kamil Konowalik<br>
-Department of Botany and Plant Ecology<br>
-Wrocław University of Environmental and Life Sciences<br>
+植物学与植物生态学系 (Department of Botany and Plant Ecology)<br>
+弗罗茨瓦夫环境与生命科学大学 (Wrocław University of Environmental and Life Sciences)<br>
 Pl. Grunwaldzki 24a<br>
-PL-50-363 Wroclaw, Poland<br>
-1<sup>st</sup> floor, room 113<br>
-tel. (+48) 71 320-1616</p><br>
+PL-50-363 Wroclaw, Poland (波兰弗罗茨瓦夫)<br>
+1层 (1<sup>st</sup> floor), 113室<br>
+电话. (+48) 71 320-1616</p><br>
 <br>
 <div id="mapid" style="width:100%; height: 400px;"></div>
 <script>
@@ -550,7 +531,7 @@ tel. (+48) 71 320-1616</p><br>
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ',
 	}).addTo(mymap);
 	var marker = L.marker([51.11348327591686, 17.063312866877656]).addTo(mymap);
-	marker.bindPopup("<b>Office</b>");
+	marker.bindPopup("<b>办公室</b>");
 
 var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
@@ -559,34 +540,34 @@ var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest
 </script>
 <br>
 <p class="lead">
-You can find me on social media and other sites:
+您也可以在学术平台或社交媒体上找到我：
 </p>
 <a href="https://scholar.google.com/citations?user=3_z6RScAAAAJ&hl=en" target="_blank">
-    <img id="logo" src="scholar.jpg" alt="Publons:1432582" width=30 />
+    <img id="logo" src="scholar.jpg" alt="Google Scholar" width=30 />
 </a>
 <a href="https://www.researchgate.net/profile/Kamil-Konowalik" target="_blank">
-    <img id="logo" src="rg.jpeg" alt="ResearchGate:Kamil_Konowalik" width=30 />
+    <img id="logo" src="rg.jpeg" alt="ResearchGate" width=30 />
 </a>
 <a href="https://orcid.org/0000-0003-4821-0608" target="_blank">
-    <img id="logo" src="orcid.jpeg" alt="Orcid:0000-0003-4821-0608" width=30 />
+    <img id="logo" src="orcid.jpeg" alt="Orcid" width=30 />
 </a>
 <a href="https://bsky.app/profile/kamil-konowalik.bsky.social" target="_blank">
-    <img id="logo" src="bluesky.png" alt="Bluesky:kamil-konowalik" width="30" />
+    <img id="logo" src="bluesky.png" alt="Bluesky" width="30" />
 </a>
 <a href="https://twitter.com/kamil_konowalik" target="_blank">
-    <img id="logo" src="twitter.jpg" alt="Twitter:kamil_konowalik (closed)" width="30" />
+    <img id="logo" src="twitter.jpg" alt="Twitter (已关闭)" width="30" />
 </a>
 <a href="https://github.com/kkonowalik" target="_blank">
-    <img id="logo" src="github.png" alt="GitHub:kknowalik" width=30 />
+    <img id="logo" src="github.png" alt="GitHub" width=30 />
 </a>
 <a href="https://publons.com/researcher/1432582/kamil-konowalik/" target="_blank">
-    <img id="logo" src="publons.jpg" alt="Publons:1432582" width=30 />
+    <img id="logo" src="publons.jpg" alt="Publons" width=30 />
 </a>
 <a href="https://bazawiedzy.upwr.edu.pl/info/author/UPWr6d361623bd8e4d558d04fba52673c30f/Kamil+Konowalik?tab=main&lang=en&cid=253260" target="_blank">
-    <img id="logo" src="upwr.jpg" alt="Uniwersytet Przyrodniczy we Wrocławiu" width=30 />
+    <img id="logo" src="upwr.jpg" alt="弗罗茨瓦夫环境与生命科学大学知识库" width=30 />
 </a>
 <a href="https://pbn.nauka.gov.pl/core/#/person/view/5e7094b6878c28a0473c2287/current" target="_blank">
-    <img id="logo" src="pbn_polon.png" alt="PBN - Polska Bibliografia Naukowa, POLon" width=30 />
+    <img id="logo" src="pbn_polon.png" alt="PBN - 波兰科学文献计量库, POLon" width=30 />
 </a>
 <a href="https://www.inaturalist.org/people/1302273" target="_blank">
     <img id="logo" src="iNaturalist.jpg" alt="iNaturalist" width=30 />
@@ -595,9 +576,9 @@ You can find me on social media and other sites:
     <img id="logo" src="bionomia.png" alt="Bionomia" width=30 />
 </a>
 </p>
-Some people asked me about that, well, if you want to support me you can consider this:
+常常有人问起，如果您想支持我的研究，可以考虑：
 <a href="https://www.buymeacoffee.com/kamil.konowalik" target="_blank">
-    <img id="logo" src="buymeacoffee.png" alt="Buy me a coffee :)" width="30%" />
+    <img id="logo" src="buymeacoffee.png" alt="请我喝杯咖啡 :)" width="30%" />
 </a>
 </p>
         </div>
@@ -605,26 +586,20 @@ Some people asked me about that, well, if you want to support me you can conside
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Kamil Konowalik 2022-2026, original code from <a href="https://startbootstrap.com" target="_blank" style="color:white">https://startbootstrap.com</a>
+      <p class="m-0 text-center text-white">版权所有 &copy; Kamil Konowalik 2022-2026，原始代码来自 <a href="https://startbootstrap.com" target="_blank" style="color:white">https://startbootstrap.com</a>
 <br>
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5jz40gdx2io&amp;m=6&amp;c=baff00&amp;cr1=ff0000&amp;s=100&amp;lx=180&amp;ly=-20&amp;hi=40&amp;he=8&amp;hc=ffffff&amp;rs=100&amp;as=50" async="async"></script>
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=Goz4keoeA9Btv1-htaQT3ZO-5KgLjkzp_EmKp9kEy1Q"></script>
 </p>
     </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
